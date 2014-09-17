@@ -1,10 +1,10 @@
-Present Ionic Framework
+Presentando Ionic Framework
 =============
 
-[Start the presentation](http://nicopace.github.io/ionic-present/#/)
-Thanks @adamdbradley for the presentation!
+[Inicia la presentación](http://nicopace.github.io/ionic-present/#/)
+Gracias @adamdbradley por la presentación!
 
-Additionally, please feel free to use this presentation as a starting point and make it your own.
+Tiene licencia MIT, asi que hagan lo que gusten con ella (como usarla para dar tu presentación)!
 
  - [Learn Ionic](http://learn.ionicframework.com/)
  - [Forum](http://forum.ionicframework.com/)
