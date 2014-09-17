@@ -7,7 +7,8 @@
 
     <title>Building Hybrid Apps with AngularJS and Ionic</title>
 
-    <meta name="description" content="Ionic Framework Presentation: The beautiful, open source framework for developing hybrid mobile apps with HTML5.">
+    <meta name="description" content="Presentación de Ionic Framework: El framework open source para desarrollar aplicaciones híbridas con HTML5.">
+    <meta name="author" content="https://twitter.com/nicopace">
     <meta name="author" content="https://twitter.com/adamdbradley">
     <meta name="author" content="https://twitter.com/benjsperry">
     <link rel="shortcut icon" href="favicon.ico">
@@ -37,12 +38,12 @@
 
         <section>
           <img src="img/ionic-logo.png" class="logo" width="296" height="331">
-          <h4>Building Hybrid Apps with AngularJS and Ionic</h4>
+          <h4>Construyendo aplicaciones híbridas con AngularJS e Ionic</h4>
         </section>
 
 
         <section>
-          <img src="img/me.jpeg" style="position: absolute; top:0; left:0; max-width: 260px; max-height: 260px; border-radius: 30px">
+          <img src="img/profile.jpg" style="position: absolute; top:0; left:0; max-width: 260px; max-height: 260px; border-radius: 30px">
           <ul style="position: absolute; top:0; left:300px;">
             <li>Nicolás Pace</li>
             <li>Socio de Unixono Coop. Ltda.</li>
@@ -53,12 +54,12 @@
 
 
         <section>
-          <h2>Overview</h2>
+          <h2>Temas que trataremos</h2>
           <ol>
-            <li>Native vs Hybrid Apps</li>
-            <li>Intro Ionic</li>
-            <li>UI Components</li>
-            <li>Ionic CLI</li>
+            <li>Aplicaciones Nativas e Híbridas</li>
+            <li>Introducción a Ionic</li>
+            <li>Componentes gráficos</li>
+            <li>Comando ionic</li>
             <li>Demos</li>
           </ol>
         </section>
@@ -66,39 +67,36 @@
 
         <section>
           <blockquote>
-            &ldquo;I want a native app!&rdquo;
+            &ldquo;¡Quiero una aplicación Nativa!&rdquo;
           </blockquote>
         </section>
 
 
         <section>
-          <h2>The Downsides of Native</h2>
+          <h2>Las desventajas de las apps nativas</h2>
           <ul>
-            <li>Proficiency in each platform required</li>
-            <li>Entirely separate code bases</li>
-            <li>Timely &amp; expensive development</li>
-            <li>Diminishing returns</li>
+            <li>Se necesita experiencia en cada plataforma soportada</li>
+            <li>Código específico para cada plataforma</li>
+            <li>El desarrollo toma más tiempo</li>
           </ul>
         </section>
 
 
         <section>
-          <h3>More Platforms. More Problems.</h3>
+          <h3>Cuantas más plataformas, más problemas.</h3>
           <p style="margin-top: 60px">
             <img src="img/apple.png" class="logo" width="200" height="200" style="margin-right: 10px">
             <img src="img/android.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
             <img src="img/windows.png" class="logo" width="200" height="200" style="margin-left: 10px; margin-right: 10px">
             <img src="img/firefoxos.png" class="logo" width="200" height="200" style="margin-left: 10px;">
           </p>
-          <p><span class="light-text">
-            Why are we still coding for multiple platforms?
-          </span></p>
+          <p><span class="light-text">¿Por qué aún seguimos programando para varias plataformas?</span></p>
         </section>
 
 
         <section>
           <blockquote>
-            &ldquo;Is there an alternative?&rdquo;
+            &ldquo;¿Existe alguna alternativa?&rdquo;
           </blockquote>
         </section>
 
@@ -106,19 +104,19 @@
         <section>
           <img src="img/cordova.png" class="logo" style="margin-bottom: 0;">
           <ul>
-            <li>Hybrid Apps: HTML5 that acts like native</li>
-            <li>Phonegap renamed to Cordova</li>
-            <li>Web wrapped in native layer</li>
-            <li>Direct access to native APIs</li>
-            <li>Familiar web dev environment</li>
-            <li>Develop a single code base (web platform)</li>
+            <li>Aplicaciones híbridas: HTML5 que actúa como nativo</li>
+            <li>Phonegap que cambió de nombre a Cordova</li>
+            <li>Web encapsulado en una capa nativa</li>
+            <li>Acceso directo a APIs nativas</li>
+            <li>Entorno de desarrollo web familiar</li>
+            <li>Se desarrolla un único código para todas las plataformas (web)</li>
           </ul>
         </section>
 
 
         <section>
           <blockquote>
-            &ldquo;Oh No! The Zuck has spoken!&rdquo;
+            &ldquo;Facebook dice que no!&rdquo;
           </blockquote>
           <img src="img/tech-crunch.png">
           <p style="font-size:10px">
@@ -128,34 +126,30 @@
 
 
         <section style="background:url(img/fb.png) no-repeat; background-size: 200px 200px;">
-          <h2 style="margin-left: 150px;">Are You Building the Facebook app?</h2>
+          <h2 style="margin-left: 150px;">¿Estás creando la app de FB?</h2>
           <ul>
-            <li>Have a multi-million dollar budget?</li>
-            <li>Have a large team of experienced native developers?</li>
-            <li>Does your billion-dollar revenue depend on this app?</li>
-            <li>If so...do native</li>
-            <li class="fragment">...but today it's not so black and white</liv>
+            <li>¿Tienes presupuesto multimillonario?</li>
+            <li>¿Tienes un equipo de desarrolladores nativos para cada plataforma?</li>
+            <li>Si es asi... ve por lo nativo</li>
+            <li class="fragment">... optar por hibridas ya no es tán dramático como antes...</liv>
           </ul>
         </section>
 
 
         <section>
           <blockquote>
-            &ldquo;Hybrid apps are slow!&rdquo;
-          </blockquote>
-          <blockquote class="fragment">
-            &ldquo;The Times They Are a-Changin'&rdquo;
+            &ldquo;¡Las apps híbridas son lentas!&rdquo;
           </blockquote>
         </section>
 
 
         <section>
-          <h3>Mobile devices have rapidly improved!</h3>
+          <h3>Los dispositivos móviles han crecido drásticamente!</h3>
           <table>
             <tr>
-              <th>Year</th>
-              <th>Device</th>
-              <th>Processor</th>
+              <th>Año</th>
+              <th>Dispositivo</th>
+              <th>Procesador</th>
               <th>RAM</th>
             </tr>
             <tr>
@@ -181,11 +175,11 @@
 
 
         <section>
-          <h3>Web-standards have rapidly improved!</h3>
+          <h3>Los estándares Web an crecido drásticamente!</h3>
           <ul style="float:left; width: 75%;">
-            <li>caniuse.com is lookin' pretty good nowadays</li>
-            <li>Android is now Chromium-based</li>
-            <li>iOS users keep their devices up-to-date</li>
+            <li>caniuse.com se ve muy bien hoy</li>
+            <li>Android utiliza Chromium ahora</li>
+            <li>iOS mantiene actualizado su OS periódicamente</li>
           </ul>
           <img src="img/caniuse.png" width=200 class="logo">
         </section>
@@ -204,24 +198,24 @@
 
 
         <section>
-          <h2>Native SDKs Are Great</h2>
+          <h2>Los Frameworks Nativos son geniales</h2>
           <ul>
-            <li>Common UI</li>
-            <li>Views</li>
-            <li>Navigation and stack history</li>
-            <li>Transitions</li>
-            <li>Gestures</li>
+            <li>UI homogenea</li>
+            <li>Vistas</li>
+            <li>Navegación e historial</li>
+            <li>Transiciones</li>
+            <li>Gestos</li>
           </ul>
         </section>
 
 
         <section>
-          <h2>There's No Web SDK</h2>
+          <h2>No hay un buen Framework Web</h2>
           <ul>
-            <li>It's the wild-west for hybrid apps</li>
-            <li>We need to bridge the gap between web and native</li>
-            <li>We need rich, native-style UI components and interactions</li>
-            <li>We need UI APIs, not just jQuery widgets</li>
+            <li>En lo que es aplicaciones híbridas, es el salvaje oeste.</li>
+            <li>Necesitamos achicar la brecha entre Nativo e Híbrido</li>
+            <li>Necesitamos componentes gráficos ricos e interactivos, que se sientan nativos</li>
+            <li>Necesitamos ir más allá de componentes JQuery</li>
           </ul>
         </section>
 
@@ -229,20 +223,20 @@
         <section>
           <img src="img/ionic-logo.png" class="logo" width="296" height="331">
           <blockquote>
-            &ldquo;Hello.&rdquo;
+            &ldquo;Hola.&rdquo;
           </blockquote>
         </section>
 
 
         <section>
-          <h2>Web Technologies You Already Know and Love</h2>
+          <h2>Tecnologías Web que ya conoces y con las que te sientes cómodo</h2>
           <div style="margin-top: 70px">
             <img src="img/html.png" class="logo" width="185" height="260">
             <img src="img/css.png" class="logo" width="185" height="260" style="margin-left: 80px; margin-right: 80px;">
             <img src="img/js.png" class="logo" width="185" height="260">
           </div>
           <p style="margin-top: 30px"><span class="light-text">
-            (You'll feel right at home)
+            (Te sientes como en casa)
           </span></p>
         </section>
 
@@ -255,44 +249,44 @@
 
         <section>
           <img src="img/angular-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
-          <h3>Standing on the Shoulders of AngularJS</h3>
+          <h3>Parado sobre los hombros de AngularJS</h3>
           <ul>
-            <li>Proven for large-scale webapp development</li>
-            <li>Extends the HTML vocabulary</li>
-            <li>UI Components using Directives and Services</li>
+            <li>Probado en grandes apps web</li>
+            <li>Extiende el vocabulario HTML</li>
+            <li>Los componentes UI utilizan directivas y servicios</li>
           </ul>
         </section>
 
 
         <section>
           <img src="img/native-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
-          <h2>Native Focused</h2>
+          <h2>Enfocado a lo nativo</h2>
           <ul>
-            <li>Modeled off of native SDKs</li>
-            <li>Built to work with Cordova</li>
+            <li>Modelado en base a Frameworks Nativos</li>
+            <li>Construido para trabajar junto a Cordova</li>
           </ul>
         </section>
 
 
         <section>
           <img src="img/performance-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
-          <h2>Performance Obsessed</h2>
+          <h2>La performance es lo primero</h2>
             <ul>
-              <li>Hardware accelerated animations</li>
-              <li>Minimal DOM Manipulation</li>
-              <li>Remove 300ms tap delay</li>
+              <li>Animaciones aceleradas por hardware</li>
+              <li>Mínima manipulación del DOM</li>
+              <li>Elimina el delay de 300ms del tap</li>
             </ul>
         </section>
 
 
         <section>
           <img src="img/design-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
-          <h2>Plain ol' CSS</h2>
+          <h2>Basado en CSS</h2>
           <ul>
-            <li>Cohesive visual system</li>
-            <li>Clean and simple</li>
-            <li>Easy to customize</li>
-            <li>Stand-alone CSS (independent of Ionic's JavaScript)</li>
+            <li>Sistema visual cohesivo</li>
+            <li>Limpio y simple</li>
+            <li>Fácil de personalizar</li>
+            <li>CSS independiente (independiente del JavaScript de Ionic)</li>
             <li><a href="http://ionicframework.com/docs/components/" target="_blank">ionicframework.com/docs/components</a></li>
           </ul>
         </section>
@@ -303,11 +297,11 @@
             <img src="img/sass-icon.png" class="logo" width="210" height="210" style="margin-bottom: 0px">
           </p>
           <ul>
-            <li>CSS generated from the Sass preprocessor</li>
-            <li>Quickly give your app its own look and feel</li>
-            <li>CSS designed to be easily overridden</li>
-            <li>Variables based with default settings</li>
-            <li>80+ reusable and useful mixins</li>
+            <li>El CSS se genera en base al preprocesador SASS</li>
+            <li>Permite darle a la app tu imagen personal rápidamente</li>
+            <li>CSS diseñado para ser fácilmente adaptado</li>
+            <li>Basado en variables, con valores por defecto</li>
+            <li>Más de 80 mixins</li>
           </ul>
         </section>
 
@@ -315,41 +309,37 @@
         <section>
           <h2>Ionicons</h2>
           <img src="img/ionicons.png" class="logo" width="655" height="436">
-          <p>Over 600 MIT licensed font-icons included</p>
+          <p>Incluye 600 iconos con licencia MIT</p>
           <p><a href="http://ionicons.com/" target="_blank">ionicons.com</a></p>
         </section>
 
 
         <section>
           <blockquote>
-            &ldquo;How does it all come together?&rdquo;
+            &ldquo;¿Cómo funciona todo esto junto?&rdquo;
           </blockquote>
           <div class="stack">Your App</div>
           <div class="stack">Ionic</div>
           <div class="stack">AngularJS</div>
           <div class="stack">WebView (Cordova)</div>
-          <div class="stack">Native SDK</div>
+          <div class="stack">SDK Nativo</div>
         </section>
 
 
         <section>
-          <h2>Ionic's Adoption</h2>
+          <h2>¿Quién usa Ionic?</h2>
           <ul>
-            <li>8400+ Github Stars</li>
-            <li>Top 80 mosted starred Github repos</li>
-            <li>Consistently Top 10 trending JS Github repos</li>
-            <li>Ionic CLI averages 1,000 downloads/day</li>
-            <li>120,000+ Ionic apps have been started from our CLI</li>
-            <li>Released Alpha: November 2013</li>
-            <li>Released Beta: March 2014</li>
-            <li>Release Candidate: Fall 2014</li>
+            <li>8400+ Favoritos en Github</li>
+            <li>Top 80 Github repos</li>
+            <li>Ionic CLI con 1,000 descargas/día</li>
+            <li>120,000+ Ionic apps fueron iniciadas desde la ionic CLI</li>
           </ul>
         </section>
 
 
         <section>
           <blockquote>
-            UI Component Overview
+            Un paseo por la UI
           </blockquote>
         </section>
 
@@ -359,7 +349,7 @@
             <img src="img/list-example.png" class="logo" width="380" height="800">
           </div>
           <div class="col code">
-            <h2>Lists</h2>
+            <h2>Listas</h2>
           <pre><code data-trim contenteditable class="xml">
 <div class="list">
 
@@ -386,12 +376,12 @@
             <iframe src="demos/list/index.html"></iframe>
           </div>
           <div class="col code">
-            <h2>Complex Lists</h2>
+            <h2>Listas más complejas</h2>
             <ul style="margin-left: 70px">
-              <li>AngularJS Directive</li>
-              <li>Buttons exposed by swiping</li>
-              <li>Reorder</li>
-              <li>Delete</li>
+              <li>Directiva AngularJS</li>
+              <li>Botones expuestos al swipe</li>
+              <li>Reordenamiento</li>
+              <li>Eliminación</li>
             </ul>
             <pre><code data-trim contenteditable class="xml">
 <ion-list>
@@ -412,11 +402,10 @@
           <div class="col code">
             <h2>Collection Repeat</h2>
             <ul style="margin-left: 70px">
-              <li>Similar to Angular's <code>ng-repeat</code></li>
-              <li>Inspired by iOS’s UICollectionView</li>
-              <li>Scroll through thousands of items</li>
-              <li>Only renders the viewable items</li>
-              <li>Smooth jank-free scrolling</li>
+              <li>Similar al <code>ng-repeat</code> de AngularJS</li>
+              <li>Permite scrollear por miles de elementos</li>
+              <li>Solo renderiza los que están visibles</li>
+              <li>Scrolling sin trabas</li>
             </ul>
             <pre><code data-trim contenteditable class="xml">
 <div class="list">
@@ -434,12 +423,12 @@
             <iframe src="demos/navigation/index.html"></iframe>
           </div>
           <div class="col code">
-            <h2>Navigation</h2>
+            <h2>Navegación</h2>
             <ul style="margin-left: 70px">
-              <li>Uses AngularUI Router</li>
-              <li>Shows back button when possible</li>
-              <li>Transitions follow direction of nav</li>
-              <li>Works with Android's back button</li>
+              <li>Usa AngularUI Router</li>
+              <li>Muestra el boton de atrás cuando corresponde</li>
+              <li>Las transiciones van en dirección de la navegación</li>
+              <li>Funciona con el botón atrás de Android</li>
             </ul>
           <pre><code data-trim contenteditable class="xml">
 <ion-nav-bar>
@@ -460,9 +449,9 @@
           <div class="col code">
             <h2>Tabs</h2>
             <ul style="margin-left: 70px">
-              <li>Nested views</li>
-              <li>Each tab has its own nav history</li>
-              <li>Abstract states in AngularUI Router</li>
+              <li>Vistas anidadas</li>
+              <li>Cada tab tiene su propio historial de navegación</li>
+              <!-- <li>Estados abstractos en AngularUI Router</li> -->
             </ul>
             <pre><code data-trim contenteditable class="xml">
 <ion-tabs>
@@ -489,7 +478,7 @@
             <iframe src="demos/sidemenu/index.html"></iframe>
           </div>
           <div class="col code">
-            <h2>Side Menu</h2>
+            <h2>Menú Lateral</h2>
           <pre><code data-trim contenteditable class="xml">
 <ion-side-menus>
 
@@ -522,7 +511,7 @@
             <iframe src="demos/slidebox/index.html"></iframe>
           </div>
           <div class="col code">
-            <h2>Slide Box</h2>
+            <h2>Slide box</h2>
           <pre><code data-trim contenteditable class="xml">
 <ion-slide-box on-slide-changed="change(index)">
   <ion-slide>
@@ -544,10 +533,10 @@
             <iframe src="demos/actionsheet/index.html"></iframe>
           </div>
           <div class="col code">
-            <h2>Action Sheet</h2>
+            <h2>Hoja de acción</h2>
             <ul style="margin-left: 70px">
-              <li>AngularJS Service</li>
-              <li>Inject into controllers</li>
+              <li>Servicio AngularJS</li>
+              <li>Se inyecta en los controladores</li>
             </ul>
           <pre><code data-trim contenteditable class="js">
 $ionicActionSheet.show({
@@ -574,8 +563,8 @@ $ionicActionSheet.show({
           <div class="col code">
             <h2>Popover</h2>
             <ul style="margin-left: 70px">
-              <li>AngularJS Service</li>
-              <li>Inline or external template</li>
+              <li>Servicio AngularJS</li>
+              <li>Inline o template externo</li>
             </ul>
           <pre><code data-trim contenteditable class="js">
 $ionicPopover.fromTemplateUrl('popover.html',
@@ -603,8 +592,8 @@ $ionicPopover.fromTemplateUrl('popover.html',
           <div class="col code">
             <h2>Modal</h2>
             <ul style="margin-left: 70px">
-              <li>AngularJS Service</li>
-              <li>Inline or external template</li>
+              <li>Servicio AngularJS</li>
+              <li>Inline o template externo</li>
             </ul>
           <pre><code data-trim contenteditable class="js">
 $ionicModal.fromTemplateUrl('modal.html', {
@@ -644,12 +633,12 @@ $ionicModal.fromTemplateUrl('modal.html', {
                           |_|\___/|_| |_|_|\___|  CLI
 </code></pre>
           <ul>
-            <li>Quickly create a project with starter templates</li>
-            <li>Boilerplate app structure ready for customization</li>
-            <li>Preconfigured tools: Gulp, Sass, Bower, etc.</li>
-            <li>Start a local dev server with LiveReload</li>
-            <li>Update Ionic Framework library files</li>
-            <li>Build and run native apps</li>
+            <li>Plantillas de proyectos para empezar rápidamente el tuyo.</li>
+            <li>Contenido de ejemplo listo para ser personalizado.</li>
+            <li>Herramientas preconfiguradas: Gulp, Sass, Bower, etc.</li>
+            <li>Cuenta con un servidor de desarrollo con LiveReload</li>
+            <li>Mantiene actualizadas las librerías de Ionic</li>
+            <li>Crea y ejecuta aplicaciones nativas</li>
           </ul>
         </section>
 
@@ -667,15 +656,14 @@ $ionicModal.fromTemplateUrl('modal.html', {
 
         <section>
           <h2><strong>Demo Time!</strong></h2>
-          <h6 class="light-text">May the demo gods be with us</h6>
         </section>
 
 
         <section>
           <h2><span style="text-decoration:line-through">Ionic</span> Angular Testing</h2>
           <ul>
-            <li>It's just an AngularJS app!</li>
-            <li>Setup with a great separation of concerns</li>
+            <li>¡Es una app AngularJS después de todo!</li>
+            <li>Buena separación de responsabilidades favorece testability</li>
             <li>Karma unit tests</li>
             <li>Protractor e2e tests</li>
           </ul>
@@ -693,34 +681,34 @@ $ionicModal.fromTemplateUrl('modal.html', {
 
         <section>
           <h2><strong>MIT LICENSED</strong></h2>
-          <h6 class="light-text">Free to use (even commercially)</h6>
+          <h6 class="light-text">Software Libre</h6>
         </section>
 
 
         <section>
-          <h2><strong>COMMUNITY POWERED</strong></h2>
-          <h6 class="light-text">Active developer forum, IRC and GitHub repo</h6>
+          <h2><strong>CREADO POR LA COMUNIDAD</strong></h2>
+          <h6 class="light-text">Foro de desarrolladores, IRC y GitHub repo</h6>
         </section>
 
 
         <section>
-          <h2>Get Started with Ionic!</h2>
+          <h2>Empieza con Ionic!</h2>
           <br />
-          <p><strong>Easy-to-follow videos, tutorials and formulas</strong><br />
+          <p><strong>Videos, tutoriales y recetas</strong><br />
           <a href="http://learn.ionicframework.com/" target="_blank"><span class="light-text">learn.ionicframework.com</span></a></p>
           <br />
-          <p><strong>Visit the Community Forum</strong><br />
+          <p><strong>Foro de desarrolladores</strong><br />
           <a href="http://forum.ionicframework.com/" target="_blank"><span class="light-text">forum.ionicframework.com</span></a></p>
           <br />
-          <p><strong>Contribute on GitHub</strong><br />
+          <p><strong>Colabora en GitHub</strong><br />
           <a href="https://github.com/driftyco/ionic" target="_blank"><span class="light-text">github.com/driftyco/ionic</span></a></p>
         </section>
 
 
         <section>
           <h2><code style="font-size:60px">&lt;/html&gt;</code></h2>
-          <h3><a href="https://twitter.com/adamdbradley" target="_blank">@adamdbradley</a></h3>
-          <h4><a href="http://adamdbradley.github.io/ionic-present/#/">http://adamdbradley.github.io/ionic-present</a></h4>
+          <h3><a href="https://twitter.com/nicopace" target="_blank">@nicopace</a></h3>
+          <h4><a href="http://nicopace.github.io/ionic-present/#/">http://nicopace.github.io/ionic-present</a></h4>
         </section>
 
 
